@@ -1,0 +1,4 @@
+include ':app', ':banner', ':AddSubView', ':pictureselector'
+rootProject.name='myshop'
+include ':ScrollViewContainer'
+include ':ScrollViewContainer1'

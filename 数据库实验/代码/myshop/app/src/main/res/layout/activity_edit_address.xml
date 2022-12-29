@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.EditAddress"
+    android:orientation="vertical"
+    android:background="@color/gray9">
+
+    <!--    标题栏-->
+    <com.example.myshop.utils.TitleLayout
+        android:id="@+id/post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--    编辑界面，此处可以写成一个ItemGroup上传至com上-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收货人:"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray3"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/ad_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="手机号:"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray3"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/ad_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="邮编  "
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray3"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/ad_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <com.example.myshop.utils.ItemGroup
+        android:id="@+id/ad_address"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:edt_hint_content="未选择"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="所在地区" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="详细地址:"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray3"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/ad_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+    </LinearLayout>
+</LinearLayout>

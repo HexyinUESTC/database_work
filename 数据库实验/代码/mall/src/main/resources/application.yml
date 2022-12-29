@@ -1,0 +1,30 @@
+server:
+  port: 8100
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myshop?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+#
+#  jpa:
+#    show-sql: true
+#    database: mysql
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        ddl_auto: update
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: false
+
+
+
+

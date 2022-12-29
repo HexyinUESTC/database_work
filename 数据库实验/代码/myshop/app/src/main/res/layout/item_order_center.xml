@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_text"
+    >
+    <com.example.myshop.utils.TitleLayout
+        android:id="@+id/order_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.myshop.utils.TitleLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10dp">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_30dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_item_allorder_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/main_white_text"
+            >
+            <!--上面调整“待支付”背景颜色-->
+
+            <TextView
+                android:id="@+id/tv_item_allorder_orderid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_10dp"
+                android:background="@color/main_white_text"
+                android:text="订单编号：E96F8AF1E5E0D5BF1646F9344E31DA14"
+                />
+            <!--上面调整订单编号颜色-->
+            <TextView
+                android:id="@+id/tv_item_allorder_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/main_red_text"
+                android:text="已支付"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_allorder_shopname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_1dp"
+            android:drawableStart="@mipmap/shopname"
+            android:drawableLeft="@mipmap/shopname"
+            android:drawablePadding="@dimen/padding_5dp"
+            android:text="芭芭拉"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textAllCaps="false"
+            android:textColor="@color/default_text_color" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/main_white_text"
+        android:id="@+id/ll_item_allorder"
+        android:layout_margin="@dimen/margin_10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/iv_item_allorder_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/margin_30dp"
+            android:src="@drawable/baby_5"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_allorder_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/padding_10dp"
+                android:text="辣椒"
+                android:textColor="@color/default_text_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_item_allorder_item_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_50dp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="共一件"
+                    android:textSize="@dimen/common_font_size_12" />
+
+                <TextView
+                    android:id="@+id/tv_item_allorder_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="¥3.00"
+                    android:textColor="@color/main_red_text"
+                    android:textSize="@dimen/common_font_size_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:background="@color/background_color"
+        >
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wuliu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_text"
+            android:layout_marginLeft="120dp"
+            android:text="查看物流">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_text"
+            android:text="联系商家">
+
+        </Button>
+        <Button
+            android:id="@+id/pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_text"
+            android:text="评价">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
